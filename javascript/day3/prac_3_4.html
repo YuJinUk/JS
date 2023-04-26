@@ -59,7 +59,20 @@
   
   <script>
 		// 이곳에 코드를 작성합니다.
-        
+        document.create
+        var butt = document.querySelector('button')
+        var answer = "학생들 모두 화이팅"
+        var mes = "여러분을 응원합니다 :)"
+        var fa = "다시 시도해주세요 :)"
+        butt.addEventListener('click', (event) =>{
+            var cont = document.querySelector('input').value
+            if (cont === answer){
+                alert(mes)
+            }
+            else {
+                alert(fa)
+            }
+        })
   </script>
 </body>
 </html>
